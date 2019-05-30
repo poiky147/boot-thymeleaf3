@@ -1,0 +1,42 @@
+<header>
+         <nav>
+            <div class="line">
+               <div class="top-nav">              
+                  <div class="logo logo-small">
+                     <a href="index.html">DESIGN <br /><strong>THEME</strong></a>
+                  </div>                  
+                  <p class="nav-text">Custom menu text</p>
+                  <div class="top-nav s-12 l-5">
+                     <ul class="right top-ul chevron">
+                          <li th:unless="${session.user}">
+                              <a href="/user-login-form">Log-In</a>
+                          </li>
+                          <li th:unless="${session.user}">
+                              <a href="/user-register-form">Sign-Up</a>
+                          </li>
+                                                    </li>
+                          <li th:if="${session.user}">
+                              <a href="/logout">Log-out</a>
+                          </li>
+                          <li th:if="${session.user}">
+                              <a href="blog.html">Update</a>
+                          </li>
+                     </ul>
+                  </div>
+                  <ul class="s-12 l-2">
+                     <li class="logo hide-s hide-m">
+                        <a href="/">DESIGN <br /><strong>THEME</strong></a>
+                     </li>
+                  </ul>
+                  <div class="top-nav s-12 l-5">
+                     <ul class="top-ul chevron">
+
+                        </li>
+                        <li><a href="contact.html">Contact</a>
+                        </li>
+                     </ul> 
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
