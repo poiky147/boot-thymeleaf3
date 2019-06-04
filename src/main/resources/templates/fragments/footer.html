@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <footer th:fragment="footerFragment">
     <div class="container">
         <p>
@@ -5,3 +6,44 @@
         </p>
 	</div>	
 </footer>
+=======
+	<footer>
+         <div class="line">
+            <div class="s-12 l-6">
+               <p>Copyright 2019, Vision Design - graphic zoo
+               </p>
+            </div>
+            <div class="s-12 l-6">
+               <p class="right">
+                  <a class="right" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding by Responsee Team</a>
+               </p>
+            </div>
+         </div>
+      </footer>
+      <script type="text/javascript" src="js/responsee.js"></script> 
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>   
+      <script type="text/javascript">
+         jQuery(document).ready(function($) {  
+            var owl = $('#header-carousel');
+            owl.owlCarousel({
+              nav: true,
+              dots: false,
+              items: 1,
+              loop: true,
+              navText: ["&#xf007","&#xf006"],
+              autoplay: true,
+              autoplayTimeout: 4000
+           });
+           var owl = $('#news-carousel');
+           owl.owlCarousel({
+              nav: true,
+              dots: false,
+              items: 1,
+              loop: true,
+              navText: ["&#xf007","&#xf006"],
+              autoplay: true,
+              autoplayTimeout: 4000
+           });
+         });
+         </script>
+>>>>>>> refs/remotes/origin/master
